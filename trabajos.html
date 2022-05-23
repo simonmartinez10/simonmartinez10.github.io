@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio/Simón Martínez </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+<header>
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="index.html"> <img src="imgs/simon mar.svg" alt="Simón Martínez"></a></h1>
+           </div>
+            <ul>
+                <li><a href="sobremi.html">SOBRE MI</a></li>
+                <li><a href="fotografia.html">FOTOGRAFÍA</a></li>
+                <li><a href="trabajos.html">TRABAJOS</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--estilo trabajos-->
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+          position: relative;
+        }
+  
+        body {
+          background: rgb(255, 255, 255);
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 55%;
+          height: auto;
+          object-fit: cover;
+        }
+  
+        .swiper-pagination-bullet {
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: rgb(250, 0, 0);
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+        }
+  
+        .swiper-pagination-bullet-active {
+          color: #fff;
+          background: #007aff;
+        }
+      </style>
+    </head>
+  
+    <body>
+
+<!--FIN estilo trabajos -->
+
+<article class="contenedor_1">
+            <!--texto-->
+            <div class="conte">
+            <h2>Identidad corporativa e imagen digital </h2>
+            <h3> Marca Plumbi </h3>
+            <p>La siguiente carpeta de imágenes plasma el trabajo final realizado en conjunto de las materias identidad corporativa e imagen digital, estos mockups muestran y plasma lo que es la marca Plumbi, la cual busca ser agradable y cercana a los niños. De igual manera, se enfoca en ser divertida e incita su curiosidad innata; todo de manera interactiva e instructiva para que los niños puedan comprender la importancia de lo que aprenden y tengan la iniciativa de ponerlo en práctica. </p>
+            
+            </div>
+        
+        </article>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imgs/identi9.jpg" alt="Pánico escénico"></div>
+          <div class="swiper-slide"><img src="imgs/identi1.jpg" alt="Llegada del covid-19"></div>
+          <div class="swiper-slide"><img src="imgs/identi2.jpg" alt="Pánico escénico"></div>
+          <div class="swiper-slide"><img src="imgs/identi3.jpg" alt="Nivel máximo de alerta"></div>
+          <div class="swiper-slide"><img src="imgs/identi4.jpg" alt="Compras compulsivas y exageradas"></div>
+          <div class="swiper-slide"><img src="imgs/identi5.jpg" alt="Alerta máxima y cuidado con los adultos mayores "></div>
+          <div class="swiper-slide"><img src="imgs/identi6.jpg" alt="Pánico escénico"></div>
+          <div class="swiper-slide"><img src="imgs/identi7.jpg" alt="Pánico escénico"></div>
+          <div class="swiper-slide"><img src="imgs/identi8.jpg" alt="Pánico escénico"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+          },
+        });
+      </script>
+    </body>
+  </html>
+
+   <!-- Demo styles -->
+  
+</head>
+
+<body>
+
+    <article class="contenedor_1">
+        <!--texto-->
+        <div class="conte">
+        <h2>Dibujo, recorte, stencil...</h2>
+        <h3>Color, tijeras, papel.</h3>
+        <p>En la siguiente muestra vemos diferentes técnicas análogas, que van desde el stencil hasta la separación de color por medio de recortes </p>
+        
+        </div>
+    
+    </article>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="imgs/recorte5.jpg" alt="Llegada del covid-19"></div>
+      <div class="swiper-slide"><img src="imgs/recorte1.jpg" alt="Pánico escénico"></div>
+      <div class="swiper-slide"><img src="imgs/recorte2.jpg" alt="Nivel máximo de alerta"></div>
+      <div class="swiper-slide"><img src="imgs/recorte3.jpg" alt="Compras compulsivas y exageradas"></div>
+      <div class="swiper-slide"><img src="imgs/recorte4.jpg" alt="Alerta máxima y cuidado con los adultos mayores "></div>
+      <div class="swiper-slide"><img src="imgs/recorte6.jpg" alt="Compras compulsivas y exageradas"></div>
+      <div class="swiper-slide"><img src="imgs/recorte7.jpg" alt="Alerta máxima y cuidado con los adultos mayores "></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+<body>
+
+    <article class="contenedor_1">
+        <!--texto-->
+        <div class="conte">
+        <h2>Fotografía publicitaria</h2>
+        
+        
+        </div>
+    
+    </article>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+       <div class="swiper-slide"><img src="imgs/publi5.jpg" alt="Alerta máxima y cuidado con los adultos mayores "></div>
+       <div class="swiper-slide"><img src="imgs/publi6.jpg" alt="Nivel máximo de alerta"></div>
+       <div class="swiper-slide"><img src="imgs/publi4.jpg"  alt="Compras compulsivas y exageradas"></div>
+      <div class="swiper-slide"><img src="imgs/publi1.jpg" alt="Llegada del covid-19"></div>
+      <div class="swiper-slide"><img src="imgs/publi2.jpg" alt="Pánico escénico"></div>
+      <div class="swiper-slide"><img src="imgs/publi3.jpg" alt="Nivel máximo de alerta"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+</body>
+</html>
+
+
+<article class="ver">
+  <!--texto-->
+  <div class="iniciar"> 
+    <a href="#">Recomendados</a>
+    
+</div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="pie">
+       
+    <h2>Diseño web-Simón Martínez Martínez</h2>
+ <ul>
+        <li> <a href="https://www.instagram.com/simon.martinez.5602/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li> <a href="https://www.facebook.com/simon.martinez.5602" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li> <a href="https://www.youtube.com/channel/UCwFZk7mnde8SIi-YjUWGS5A" target="blank"><i class="fa-brands fa-youtube"></i></a></li>
+    </ul>
+    <p>© copyright Diseño Web /Universidad Católica Luis Amigó</p>
+
+</footer>
+ 
+</body>
+</html>

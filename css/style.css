@@ -1,0 +1,827 @@
+
+/*Variables*/
+:root
+{
+    --color_primario: #00285C;
+    --color_secundario:#448DE1;
+    --color_terceriario: white ;
+    --type: Montserrat,Georgia,serif;;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color_primario);
+
+/*estilo navegador*/
+}
+
+header .logo {
+    width: 280px;
+    margin: 0.188em;
+
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+nav {
+    background-color: var(--color_primario);
+
+    width: 100%;
+}
+
+nav .nav {
+    padding: 0.3em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: #ffffff;
+    padding: .8em 1em;
+    border-radius: 45px;
+}
+
+nav .container ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color:#ffffff;
+}
+
+/*estilo contenedor 1 sección principal, fotografia y trabajos */
+.contenedor_1
+{   display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3.125em;
+    padding-top: 1.25em;
+    background-color: var(--color_terceriario);
+    font-family: var(--type);
+}
+.contenedor_1 .conte 
+{
+    width: 45%;
+    margin: 1.875em;
+}
+.contenedor_1 .conte h2
+{
+
+    font-size: 4.375em;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 0.2em;
+    color: var(--color_secundario);
+    font-family: var(--type);
+}
+.contenedor_1 .conte h3
+{
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-family: var(--type);
+}
+.contenedor_1 .conte p 
+{
+line-height: 25px;
+font-family:  Average,serif;
+font-size: 1.125em;
+font-family: var(--type);
+}
+
+.contenedor_1 .imagen
+{
+    width: 350px;
+
+}
+.redonda
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 170px;
+    border: 10px solid #005DC7;
+}
+
+.contenedor_1 .down {
+    margin-top: 3em;
+
+}
+
+/*estilo contenedor 2 sección principal abajo*/
+
+
+.contenedor_2
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color_secundario);
+    border-bottom: solid white 8px;
+}
+.contenedor_2 h2 
+{
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 0.875em;
+}
+.contenedor_2 .conte2
+
+{
+    padding: 2.5em;
+    align-content: space-around;
+    align-items: baseline;
+    flex-grow: inherit;
+    display: flex;
+}
+
+.titulos
+{
+    background-color: var(--color_secundario);
+}
+
+.titulos h1
+{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    color: var(--color_terceriario);
+    font-size: 2em;
+    font-family: var(--type);
+    font-style: oblique;
+}
+
+.titulos p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+    font-style: var(--type);
+}
+.punto h2 
+{
+    font-family: var(--type);
+    font-style: italic;
+}
+
+.punto .redonda1
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+    border: 10px solid #004594;
+}
+
+.punto .redonda2
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+    border: 10px solid #004594;
+}
+
+.punto .redonda3
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+    border: 10px solid #004594;
+}
+
+
+/*estilo footer*/
+
+.pie
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: var(--color_primario);
+}
+.pie h2
+{
+    margin: 1em;
+    color: white;
+}
+
+.pie ul li 
+{
+    display: flex;
+    display: inline;
+    width: 80px;
+    font-size: 2em;
+    padding: 0.4em;
+    margin: 0.3em;
+    color: white;
+}
+.pie ul li a i
+{
+    color: white;
+}
+
+.pie ul li a:hover  i
+
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0.2em;
+}
+.pie p
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: var(--color_terceriario);
+    
+}
+
+
+ /*estilo sobre mi */
+ .contenedor2 { 
+    margin:auto;
+    display: grid;
+    grid-template-areas: "titulo titulo "
+                         "foto_personal  descripcion "
+                         "formacion datos";
+                        
+    background-color: var(--color_terceriario);       
+    font-family: var(--type);             
+                        
+                        
+ }
+
+.titulo {grid-area: titulo;}
+
+.titulo h1{ 
+    color: var(--color_secundario);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: var(--type);
+    font-style: italic;
+}
+
+.foto_personal { 
+    grid-area: foto_personal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto_personal img { 
+    width: 260px;
+    height: auto;
+}
+
+.descripcion { grid-area: descripcion;
+             padding: 1em;}
+
+.descripcion p { font-size: 1.2em;
+                color: black;
+                width: 80%;
+}
+
+
+.formacion { 
+    align-items: center;
+    padding: 0.3em;
+    color: black;
+    margin: 1em;
+    margin-left: 7em;
+}
+
+.formacion h2 { 
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    color: var(--color_primario);
+    font-family: var(--type);
+    font-style: italic;
+}
+
+.formacion li { font-size: 1.2em;
+list-style: none;
+text-align: center;
+line-height: 40px;
+}
+
+.datos {
+    align-items: center;
+    padding: 0.3em;
+    color: black;
+    margin-right: 7em;
+}
+
+.datos h2{  
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    color: var(--color_primario);
+    font-family: var(--type);
+    font-style: italic;
+}
+
+.datos li { font-size: 1.2em;
+list-style: none;
+text-align: center;
+line-height: 40px;
+}
+
+/*estilo boton abajo trabajos y fotografia*/
+  
+  .ver .iniciar a
+  {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-style: italic;
+      font-size: 1.125em;
+      border-radius: 50px;
+      margin: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      background-color: var(--color_terceriario);
+
+  }
+  
+ .ver .iniciar a:hover
+  {
+      color: rgb(255, 255, 255);
+      background-color: var(--color_secundario);
+      
+  }
+
+
+
+  /*Responsive móvil*/
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+header .logo {
+    width: 200px;
+    margin: 0.110em;
+
+}
+
+.container{
+    
+    flex-direction: column;
+
+}
+
+
+
+nav .container ul li {
+    display: flex;
+    flex-direction: column;
+    padding: .2em;
+    font-size: 0.8em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: #ffffff;
+    padding: .3em 1em;
+    border-radius: 45px;
+}
+
+
+
+
+/*estilo contenedor 1 sección principal, fotografia y trabajos */
+.contenedor_1
+{  
+    flex-direction: column;
+    justify-content: none;
+    
+}
+.contenedor_1 .conte 
+{
+    width: 80%;
+    margin: 0.1em;
+}
+.contenedor_1 .conte h2
+{
+
+    font-size: 2em;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 0.2em;
+    color: var(--color_secundario);
+    font-family: var(--type);
+}
+.contenedor_1 .conte h3
+{
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-family: var(--type);
+}
+.contenedor_1 .conte p 
+{
+line-height: 25px;
+font-family:  Average,serif;
+font-size: 1.125em;
+font-family: var(--type);
+}
+
+.contenedor_1 .imagen
+{
+    width: 150px;
+
+}
+.redonda
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+    border: 10px solid #005DC7;
+}
+
+.contenedor_1 .down {
+    margin-top: 1em;
+
+}
+
+
+/*estilo contenedor 2 sección principal abajo*/
+
+
+.contenedor_2
+{
+    flex-direction: column;
+    
+}
+
+.titulos p
+{
+    width: 80%;
+   
+}
+
+
+/*estilo footer*/
+
+.pie p
+{
+ margin: 1em;
+    
+}
+
+/*estilo sobre mi */
+.contenedor2 { 
+    display: flex;
+    flex-direction: column;         
+                        
+                        
+ }
+
+.titulo h1{ 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.foto_personal { 
+    grid-area: none;
+}
+
+.descripcion { grid-area: descripcion;
+             padding: 1em;}
+
+.descripcion p { font-size: 1.2em;
+                color: black;
+                width: 95%;
+                margin:.2em;
+}
+
+
+.formacion { 
+    margin: .3em;
+    margin-left: .3em;
+}
+
+.formacion h2 { 
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+.formacion li { font-size: 1.2em;
+list-style: none;
+text-align: center;
+line-height: 40px;
+}
+
+.datos {
+    margin: .3em;
+    padding: 0.3em;
+    color: black;
+    margin-right: .3em;
+}
+
+.datos h2{  
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    color: var(--color_primario);
+    font-family: var(--type);
+    font-style: italic;
+}
+
+.datos li { font-size: 1.2em;
+list-style: none;
+text-align: center;
+line-height: 40px;
+}
+
+
+
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+
+
+    header .logo {
+        width: 300px;
+        margin: 0.110em;
+    
+    }
+    
+    .container{
+        
+        flex-direction: column;
+    
+    }
+    
+    nav .container ul li {
+        display: flex;
+        display: inline;
+        font-size: 0.8em;
+
+    }
+    
+
+    /*estilo contenedor 1 sección principal, fotografia y trabajos */
+.contenedor_1
+{  
+    flex-direction: column;
+    justify-content: none;
+    
+}
+.contenedor_1 .conte 
+{
+    width: 80%;
+    margin: 0.1em;
+}
+.contenedor_1 .conte h2
+{
+
+    font-size: 2em;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 0.2em;
+    color: var(--color_secundario);
+    font-family: var(--type);
+    margin-top: 1em;
+}
+.contenedor_1 .conte h3
+{
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-family: var(--type);
+}
+.contenedor_1 .conte p 
+{
+line-height: 25px;
+font-family:  Average,serif;
+font-size: 1.125em;
+font-family: var(--type);
+}
+
+.contenedor_1 .imagen
+{
+    width: 150px;
+
+}
+.redonda
+{
+    width: 280px;
+    height: 280px;
+    border-radius: 170px;
+    border: 10px solid #005DC7;
+}
+
+.contenedor_1 .down {
+    margin-top: 1em;
+
+}
+
+/*estilo contenedor 2 sección principal abajo*/
+
+
+.contenedor_2
+{
+    flex-direction: column;
+    
+}
+
+.titulos p
+{
+    width: 80%;
+   
+}
+    
+
+
+/*estilo sobre mi */
+.contenedor2 { 
+    display: flex;
+    flex-direction: column;         
+                        
+                        
+ }
+
+.titulo h1{ 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.foto_personal { 
+    grid-area: none;
+}
+
+.descripcion { grid-area: descripcion;
+             padding: 1em;}
+
+.descripcion p { font-size: 1.2em;
+                color: black;
+                width: 95%;
+                margin:.2em;
+}
+
+
+.formacion { 
+    margin: .3em;
+    margin-left: .3em;
+}
+
+.formacion h2 { 
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+.formacion li { font-size: 1.2em;
+list-style: none;
+text-align: center;
+line-height: 40px;
+}
+
+.datos {
+    margin: .3em;
+    padding: 0.3em;
+    color: black;
+    margin-right: .3em;
+}
+
+.datos h2{  
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    color: var(--color_primario);
+    font-family: var(--type);
+    font-style: italic;
+}
+
+.datos li { font-size: 1.2em;
+list-style: none;
+text-align: center;
+line-height: 40px;
+}
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+    header .logo {
+        width: 180px;
+    
+    }
+
+    
+    
+    nav .container ul li {
+        display: flex;
+        display: inline;
+        padding: 0em;
+        font-size: 1em;
+    }
+    
+
+    /*estilo contenedor 1 sección principal, fotografia y trabajos */
+.contenedor_1
+{   display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3.125em;
+    padding-top: 1.25em;
+    background-color: var(--color_terceriario);
+    font-family: var(--type);
+}
+.contenedor_1 .conte 
+{
+    width: 45%;
+    margin: 1.875em;
+}
+.contenedor_1 .conte h2
+{
+ font-size: 2em;
+}
+
+.redonda
+{
+    width: 300px;
+    height: 300px;
+    margin-left: 1em;
+}
+
+.contenedor_1 .down {
+    margin-top: 3em;
+
+}
+
+/*estilo contenedor 2 sección principal abajo*/
+
+
+
+
+.punto h2 
+{
+    font-size: 1.3em;
+}
+
+.punto .redonda1
+{
+    width: 180px;
+    height:180px;
+    border: 7px solid #004594;
+}
+
+.punto .redonda2
+{
+    width: 180px;
+    height:180px;
+    border: 7px solid #004594;
+}
+
+.punto .redonda3
+{
+    width: 180px;
+    height:180px;
+    border: 7px solid #004594;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
